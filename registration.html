@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="registration.css" class="css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="registration.js"></script>
+</head>
+<body>
+<div class="container">
+
+    <div class="header">
+    
+        <h2 class="text-center">CREATE ACCOUNT</h2>
+        
+    </div>
+    <form class="form" action="#" onsubmit="passwordd()" id="form">
+        
+        <div class="form-control">
+            <label>Fullname</label>
+            <input type="text" name="" id="fullname" placeholder="Enter your Fullname" >
+           
+
+        </div>
+        <div class="form-control">
+            <label>Email</label>
+            <input type="email" name=""id="email" placeholder="Enter your Email">
+            
+
+        </div>
+        <div class="form-control">
+            <label>Phone</label>
+            <input type="number" name=""id="phone" placeholder="Enter your Contact no">
+           
+
+        </div>
+        <div class="form-control">
+            <label>Address</label>
+            <input type="text" name=""id="address" placeholder="Enter your Address">
+            
+           
+
+        </div>
+        <div class="form-control">
+            <label>Aadhar number</label>
+            <input type="text" name=""id="aadhar" title="must contain 12 numbers" placeholder="Enter your Aadharno">
+            
+
+        </div>
+        <div class="form-control">
+            <label>Username</label>
+            <input type="text" name=""id="username" placeholder="Enter your username">
+            
+        </div>
+        <div class="form-control">
+            <label>Password</label>
+            <input type="password" id="password" placeholder="Enter your Password"  title="must contain number an uppercase a lowercase a special character and minimum 8 character" onkeyup='check();'>
+           
+            
+        </div>
+        <div class="form-control">
+            <label>Confirm password</label>
+            <input type="password" id="cpassword" placeholder="Enter your Password again" onkeyup='check();'>
+            <span id='message'></span>
+         
+        </div>
+        <input type="submit" class="btn" value="Submit">
+        </div>
+
+
+    </form>
+</div>
+<script src="registration.js">
+
+
+</script>
+    
+</body>
+</html>
